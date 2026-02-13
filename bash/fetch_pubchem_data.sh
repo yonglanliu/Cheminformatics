@@ -11,7 +11,7 @@ echo "Conda environment activated: $(which python)"
 # ----------------------------
 # Variables
 # ----------------------------
-TARGET_CHEMBL_ID=""
+TARGET_UNIPROT_ID=""
 
 BIOACTIVITY_OUT_PATH=""
 FINAL_OUT_PATH=""
@@ -23,7 +23,7 @@ RUN_SCRIPT="./scripts/fetch_pubchem_data.py"
 # Run pipeline
 # ----------------------------
 python "$RUN_SCRIPT" \
-    --uniprot "$TARGET_CHEMBL_ID" \
+    --uniprot "$TARGET_UNIPROT_ID" \
     --out_final_csv "$FINAL_OUT_PATH" \
     --out_bio_csv "$BIOACTIVITY_OUT_PATH" \
     --work_dir "./" \
