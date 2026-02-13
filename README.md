@@ -38,6 +38,7 @@ LOG_PATH="chembl_pipeline.log"                # Execution logs
 RUN_SCRIPT="./scripts/fetch_chembl_data.py"
 ```
 
+Then run:
 
 ``bash
 source ./bash/fetch_chembl_data.sh
