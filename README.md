@@ -19,12 +19,13 @@ conda activate chem
 
 ### Data Acquisition Pipeline
 
-The pipeline automates the retrieval of bioactivity data, filters for IC50 values, handles missing data, and converts values to $pIC_{50}$ ($-\log_{10}(IC_{50})$).
+The pipeline automates the retrieval of bioactivity data, filters for IC50 values, handles missing data, and converts values to <code>pIC50 = -log10(IC50_Molar)</code>.
 
 Configuration
 Before running the pipeline, update the variables in <code>./bash/fetch_chembl_data.sh</code> to match your target of interest:
 
 ``bash
+
 # --- Configuration Settings ---
 # Target ChEMBL ID (e.g., CHEMBL203 for EGFR)
 TARGET_CHEMBL_ID=" "
@@ -36,6 +37,7 @@ LOG_PATH="chembl_pipeline.log"                # Execution logs
 
 # Script location
 RUN_SCRIPT="./scripts/fetch_chembl_data.py"
+
 ``
 
 ``bash
