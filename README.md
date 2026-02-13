@@ -8,13 +8,13 @@ Ensure you have Conda installed. Create the environment from the provided enviro
 
 ## Conda Environment setup and activate environment
 
-``bash
+```bash
 # Create the environment
 conda env create -f environment.yml
 
 # Activate the environment
 conda activate chem
-``
+```
 
 
 ### Data Acquisition Pipeline
@@ -24,7 +24,7 @@ The pipeline automates the retrieval of bioactivity data, filters for IC50 value
 ### Configuration
 Before running the pipeline, update the variables in <code>./bash/fetch_chembl_data.sh</code> to match your target of interest:
 
-``bash
+```bash
 # --- Configuration Settings ---
 # Target ChEMBL ID (e.g., CHEMBL203 for EGFR)
 TARGET_CHEMBL_ID=" "
@@ -36,7 +36,7 @@ LOG_PATH="chembl_pipeline.log"                # Execution logs
 
 # Script location
 RUN_SCRIPT="./scripts/fetch_chembl_data.py"
-``
+```
 
 
 ``bash
