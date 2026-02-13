@@ -40,9 +40,10 @@ RUN_SCRIPT="./scripts/fetch_chembl_data.py"
 
 Then run:
 
-``bash
+
+```bash
 source ./bash/fetch_chembl_data.sh
-``
+```
 
 ### Features
 
