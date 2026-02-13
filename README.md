@@ -24,7 +24,7 @@ The pipeline automates the retrieval of bioactivity data, filters for IC50 value
 ### Configuration
 Before running the pipeline, update the variables in <code>./bash/fetch_chembl_data.sh</code> to match your target of interest:
 
-<code>
+``bash
 # --- Configuration Settings ---
 # Target ChEMBL ID (e.g., CHEMBL203 for EGFR)
 TARGET_CHEMBL_ID=" "
@@ -36,7 +36,8 @@ LOG_PATH="chembl_pipeline.log"                # Execution logs
 
 # Script location
 RUN_SCRIPT="./scripts/fetch_chembl_data.py"
-</code>
+``
+
 
 ``bash
 source ./bash/fetch_chembl_data.sh
