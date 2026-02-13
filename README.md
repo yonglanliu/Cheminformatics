@@ -47,7 +47,7 @@ Then run:
 ```bash
 source ./bash/fetch_chembl_data.sh # To fetch chembl data
 source ./bash/fetch_pubchem_data.sh # To fetch pubchem data
-source ./bash/fetch_BindingDB_data.sh # To fetch pubchem data
+source ./bash/fetch_BindingDB_data.sh # To fetch BindingDB data
 ```
 
 ### Features
