@@ -22,12 +22,13 @@ conda activate chem
 The pipeline automates the retrieval of bioactivity data, filters for IC50 values, handles missing data, and converts values to <code>pIC50 = -log10(IC50_Molar)</code>.
 
 ### Configuration
-Before running the pipeline, update the variables in <code>./bash/fetch_chembl_data.sh</code> to match your target of interest:
+Before running the pipeline, update the variables in <code>./bash/fetch_chembl_data.sh</code> or <code>./bash/fetch_pubchem_data.sh</code> to match your target of interest:
 
 ```bash
 # --- Configuration Settings ---
 # Target ChEMBL ID (e.g., CHEMBL203 for EGFR)
-TARGET_CHEMBL_ID=" "
+TARGET_CHEMBL_ID=" "  # For chembl data
+TARGET_UNIPROT_ID # For pubchem data
 
 # Output paths
 BIOACTIVITY_OUT_PATH="bioactivity_chembl.csv" # Raw data storage
@@ -42,7 +43,8 @@ Then run:
 
 
 ```bash
-source ./bash/fetch_chembl_data.sh
+source ./bash/fetch_chembl_data.sh # To fetch chembl data
+source ./bash/fetch_pubchem_data.sh # To fetch pubchem data
 ```
 
 ### Features
