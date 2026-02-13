@@ -26,17 +26,18 @@ Before running the pipeline, update the variables in <code>./bash/fetch_chembl_d
 
 ```bash
 # --- Configuration Settings ---
-# Target ChEMBL ID (e.g., CHEMBL203 for EGFR)
-TARGET_CHEMBL_ID=" "  # For chembl data
-TARGET_UNIPROT_ID # For pubchem data
+
+TARGET_CHEMBL_ID=""  # For ChEMBL data --- Target ChEMBL ID (e.g., CHEMBL203 for EGFR)
+TARGET_UNIPROT_ID="" # For PubChem data
 
 # Output paths
-BIOACTIVITY_OUT_PATH="bioactivity_chembl.csv" # Raw data storage
-FINAL_OUT_PATH="smiles_plus_pIC50.csv"        # Processed molecule_chembl_id + SMILES + pIC50
-LOG_PATH="chembl_pipeline.log"                # Execution logs
+BIOACTIVITY_OUT_PATH="bioactivity.csv"        # Raw data storage
+FINAL_OUT_PATH="smiles_plus_pIC50.csv"        # Processed molecule_chembl_id/CID + SMILES + pIC50
+LOG_PATH="pipeline.log"                       # Execution logs
 
 # Script location
-RUN_SCRIPT="./scripts/fetch_chembl_data.py"
+RUN_SCRIPT="./scripts/fetch_chembl_data.py"  # For ChEMBL dataset
+RUN_SCRIPT="./scripts/fetch_pubchem_data.py"  # For PubChem dataset
 ```
 
 Then run:
