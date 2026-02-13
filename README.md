@@ -31,7 +31,7 @@ TARGET_CHEMBL_ID=" "
 
 # Output paths
 BIOACTIVITY_OUT_PATH="bioactivity_chembl.csv" # Raw data storage
-FINAL_OUT_PATH="smiles_plus_pIC50.csv"        # Processed SMILES + pIC50
+FINAL_OUT_PATH="smiles_plus_pIC50.csv"        # Processed molecule_chembl_id + SMILES + pIC50
 LOG_PATH="chembl_pipeline.log"                # Execution logs
 
 # Script location
