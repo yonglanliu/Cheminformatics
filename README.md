@@ -1,5 +1,5 @@
 # Cheminformatics Data Pipeline
-This repository provides a streamlined workflow for fetching, cleaning, and processing bioactivity and molecular structure data directly from the ChEMBL database.
+This repository provides a streamlined workflow for fetching, cleaning, and processing bioactivity and molecular structure data directly from different database.
 
 ## Getting Started
 
