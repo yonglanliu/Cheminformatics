@@ -38,6 +38,7 @@ LOG_PATH="pipeline.log"                       # Execution logs
 # Script location
 RUN_SCRIPT="./scripts/fetch_chembl_data.py"  # For ChEMBL dataset
 RUN_SCRIPT="./scripts/fetch_pubchem_data.py"  # For PubChem dataset
+RUN_SCRIPT="./scripts/fetch_BindingDB_data.py"  # For BindingDB dataset
 ```
 
 Then run:
@@ -46,6 +47,7 @@ Then run:
 ```bash
 source ./bash/fetch_chembl_data.sh # To fetch chembl data
 source ./bash/fetch_pubchem_data.sh # To fetch pubchem data
+source ./bash/fetch_BindingDB_data.sh # To fetch pubchem data
 ```
 
 ### Features
