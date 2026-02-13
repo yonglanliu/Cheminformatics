@@ -46,7 +46,7 @@ source ./bash/fetch_chembl_data.sh
 
 ### Features
 
-* **Data Cleaning**: Automatic removal of duplicates and NaN values.
+* **Data Cleaning**: Automatic removal of duplicates and NaN values. For the multiple data with the same molecule_chembl_id, using the median value of pIC50
 * **Standardization**: Filters specifically for IC50 bioactivity types.
 * **Transformation**: Automated conversion of molar IC50 concentrations to $pIC_{50}$ for better statistical distribution.
 * **Logging**: Detailed step-by-step tracking of the retrieval and cleaning process.
