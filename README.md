@@ -56,3 +56,50 @@ source ./bash/fetch_BindingDB_data.sh # To fetch BindingDB data
 * **Standardization**: Filters specifically for IC50 bioactivity types.
 * **Transformation**: Automated conversion of molar IC50 concentrations to $pIC_{50}$ for better statistical distribution.
 * **Logging**: Detailed step-by-step tracking of the retrieval and cleaning process.
+
+
+## Combine Databases
+**Workflow:**
+
+1. Clean SMILES (remove |...|)
+2. Convert SMILES → RDKit Mol
+3. Canonicalize (optional but good)
+4. Generate InChIKey
+5. Merge on InChIKey
+
+
+**Note**: For a molecule, InChIKey is unique, but SMILES may change.
+
+✅ InChIKey is intended to uniquely represent a chemical structure (after standardization).
+
+#### ⚠️ SMILES can vary for the same molecule.
+
+* SMILES is a string encoding of a graph, and:
+* There are many valid SMILES for the same molecule.
+* Different databases use different canonicalization rules.
+* Atom ordering can change.
+* Explicit vs implicit hydrogens can change.
+* Aromatic vs Kekulé form can change.
+
+Example (same molecule, caffeine):
+
+```bash
+CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+Cn1cnc2n(C)c(=O)n(C)c(=O)c12
+```
+
+Different SMILES, same molecule. So merging datasets on SMILES is risky unless you canonicalize first.
+
+#### InChIKey is:
+
+* Derived from the standardized InChI
+* Canonical
+* Structure-based
+* Database-independent
+* Designed for cross-database matching
+
+For the same standardized structure:
+
+```bash
+ZFXYFBGIUFBOJW-UHFFFAOYSA-N
+```
