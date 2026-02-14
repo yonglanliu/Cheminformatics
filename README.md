@@ -103,3 +103,12 @@ For the same standardized structure:
 ```bash
 ZFXYFBGIUFBOJW-UHFFFAOYSA-N
 ```
+
+To combine all databases together, then run:
+
+```bash
+source ./bash/combine_database.sh
+```
+
+It will give the statistics of overlap information.
+
