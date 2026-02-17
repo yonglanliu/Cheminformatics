@@ -11,7 +11,7 @@ echo "Conda environment activated: $(which python)"
 # ----------------------------
 # Variables
 # ----------------------------
-TARGET_CHEMBL_ID="Q08493"
+TARGET_UNIPROT_ID="" # Use uniprot ID
 
 FINAL_OUT_PATH="smiles_plus_pIC50_BindingDB.csv"
 LOG_PATH="BindingDB_pipeline.log"
