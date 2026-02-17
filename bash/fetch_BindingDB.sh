@@ -22,7 +22,7 @@ RUN_SCRIPT="./scripts/fetch_BindingDB_data.py"
 # Run pipeline
 # ----------------------------
 python "$RUN_SCRIPT" \
-    --uniprot "$TARGET_CHEMBL_ID" \
+    --uniprot "$TARGET_UNIPROT_ID" \
     --out_csv "$FINAL_OUT_PATH" \
     --log_path "$LOG_PATH"
 
