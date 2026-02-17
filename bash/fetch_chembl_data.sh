@@ -11,7 +11,7 @@ echo "Conda environment activated: $(which python)"
 # ----------------------------
 # Variables
 # ----------------------------
-TARGET_CHEMBL_ID=""
+TARGET_CHEMBL_ID=""   # Target ChEMBL ID
 
 BIOACTIVITY_OUT_PATH=""
 FINAL_OUT_PATH=""
