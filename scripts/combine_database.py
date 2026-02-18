@@ -1,6 +1,7 @@
+# Copyright (c) 2026 Yonglan Liu
+# Licensed under the MIT License.
+
 """
-Created by: Yonglan Liu
-Date: 2026-02-13
 Purpose: Combine ChEMBL, PubChem, BindingDB datasets using structure keys (InChIKey)
          and track progress with a logger.
 """
