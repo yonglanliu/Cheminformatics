@@ -1,7 +1,6 @@
-"""
-Created by: Yonglan Liu
-date: 2026-02-13
-"""
+# Copyright (c) 2026 Yonglan Liu
+# Licensed under the MIT License.
+
 import argparse
 import csv
 import io
