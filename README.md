@@ -19,7 +19,7 @@ conda activate chem
 
 ### Data Acquisition Pipeline
 
-The pipeline automates the retrieval of bioactivity data, filters for IC50 values, handles missing data, and converts values to <code>pIC50 = 9-log10(IC50_Molar)</code>.
+The pipeline automates the retrieval of bioactivity data, filters for IC50 values, handles missing data, and converts values to <code>pIC50 = -log10(IC50_Molar)</code>.
 
 ### Configuration
 Before running the pipeline, update the variables in <code>./bash/fetch_chembl_data.sh</code> or <code>./bash/fetch_pubchem_data.sh</code> to match your target of interest:
